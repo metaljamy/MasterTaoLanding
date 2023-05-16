@@ -1,3 +1,29 @@
-h1 {
-    color: blue;
+
+.first-screen{
+    .slick-slide{
+        padding: 163px 0 228px 340px;
+    }
+    
+    .main-title{
+        width: 463px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 126%;
+        text-transform: uppercase;
+    }
+    
+    .sub-title{
+        width: 345px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 135.5%;
+        text-transform: uppercase;
+    }
+    
+    .primary-btn{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 146%;
+        text-transform: uppercase;
+    }
 }

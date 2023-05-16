@@ -1,0 +1,28 @@
+body{
+    background-color: $primary-bg;
+    color: $text-color;
+    font-family: $font-primary;
+}
+
+h4{
+    color: $text-color;
+}
+
+a{
+    color: $primary-color;
+    &:hover{
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+.container-xxl{
+    max-width: 1820px;
+}
+
+p::selection,
+li::selection{
+    background-color:  $secondary-color;
+}
+
+
