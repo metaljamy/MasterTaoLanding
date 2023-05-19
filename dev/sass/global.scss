@@ -4,7 +4,43 @@ body{
     font-family: $font-primary;
 }
 
-h4{
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 700;
+    line-height: 126%;
+    text-transform: uppercase;
+}
+
+h1, .h1{
+    font-size: 56px;
+}
+
+h2, .h2{
+    font-size: 36px;
+}
+
+h3, .h3{
+    font-size: 24px;
+}
+ 
+
+h4, .h4{
+    font-size: 22px;
+}
+ 
+
+h5, .h5{
+    font-size: 20px;
+}
+ 
+
+h6, .h6{
+    font-size: 18px;
+}
+
+
+h4,
+button{
     color: $text-color;
 }
 
@@ -24,5 +60,119 @@ p::selection,
 li::selection{
     background-color:  $secondary-color;
 }
+
+.btn{
+    padding: 13px 17px;
+    font-weight: 600;
+    line-height: 146%;
+    border-radius: 90px;
+    &:hover{
+        .icon{
+            filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(250deg) brightness(180%) contrast(100%);
+        }
+    }
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+        &:hover{
+            background-color: $secondary-color;
+        }
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border-color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
+}
+
+.btn-lg{
+    padding: 23px 33px;
+    font-size: 16px;
+    white-space: nowrap;
+    display: flex;
+    .icon{
+        margin: 0 -14px 0 30px;
+    }
+}
+
+/*scroll*/
+.scroll {
+    height: 200px;
+    overflow: auto;
+}
+ 
+.scroll-x::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 5px;
+}
+
+.scroll-x::-webkit-scrollbar {
+    height: 3px;
+    background-color: #fff;
+    border: 0px solid #fff;
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar {
+    margin: 5px;
+    width: 7px;
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    background-clip: padding-box;
+    border: 0px solid #fff;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $primary-color;
+        cursor: pointer;
+    }
+}
+
+.scroll::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.scroll::-webkit-scrollbar-corner {
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: transparent;
+    display: none;
+}
+
+/* IE */
+
+.scroll {
+
+    scrollbar-face-color: $primary-color;
+    scrollbar-shadow-color: #fff;
+    scrollbar-highlight-color: #fff;
+}
+
+/* FireFox */
+.scroll {
+    scrollbar-color: $primary-color #fff;
+    padding-right: 15px
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.scroll-heidden::-webkit-scrollbar {
+    width: 0px;
+}
+
+
 
 
