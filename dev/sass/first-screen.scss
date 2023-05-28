@@ -1,23 +1,25 @@
 
 .first-screen{
     .slick-slide{
-        padding: 163px 0 228px 340px;
+        padding: 163px 0 228px;
     }
     
     .main-title{
-        width: 463px;
+        margin-bottom: 8px;
+        max-width: 500px;
         font-weight: 700;
         font-size: 56px;
         line-height: 126%;
         text-transform: uppercase;
+        display: flex;
     }
     
     .sub-title{
-        width: 375px;
+        margin-bottom: 37px;
+        max-width: 336px;
         font-weight: 300;
         font-size: 20px;
         line-height: 135.5%;
-        text-transform: uppercase;
     }
     
     
