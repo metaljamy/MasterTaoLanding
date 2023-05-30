@@ -1,8 +1,8 @@
 header{
 
     .navbar{
-        padding: 27.5px 0;
-        // @extend container;
+        padding: 26.5px 0px 0 18px;
+        //@extend container;
         .navbar-nav{
             max-width: 618px;
             width: 100%;
@@ -12,7 +12,7 @@ header{
         }
         .btn-primary{
             margin-left: 16px;
-            padding: 13px 24.5px;
+            padding: 13px 23.5px;
             white-space: nowrap;
         }
     }
