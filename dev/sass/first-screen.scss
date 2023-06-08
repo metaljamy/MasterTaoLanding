@@ -1,29 +1,102 @@
 
 .first-screen{
+    position: relative;
+    margin-bottom: 100px;
+
     .slick-slide{
-        margin-top: 8px;
-        padding: 164px 0 228px;
-        border-radius: 20px;
+        margin: 0 10px;
+        padding: 165px 92px 228px;
+        border-radius: 22px;
         background-position: center;
-        background-size: cover;
+        background-size: cover
+    }
+
+    .btn-lg {
+        padding: 19.6px 36px;
+        letter-spacing: 0;
+        max-width: 302px;
+        margin-left: 9px;
+    }
+
+    .slick-list {
+        margin: 0 -10px;
+        border-radius: 22px;
     }
     
     .main-title{
-        margin-bottom: 8px;
-        max-width: 500px;
         font-weight: 700;
         font-size: 56px;
         line-height: 126%;
         text-transform: uppercase;
-        display: flex;
+        margin: -2px 0 8px 8px;
+        max-width: 500px;
     }
     
     .sub-title{
-        margin-bottom: 37px;
-        max-width: 336px;
         font-weight: 300;
         font-size: 20px;
         line-height: 135.5%;
+        margin-bottom: 37px;
+        margin-left: 8px;
+        max-width: 336px;
+    }
+
+    .container-arrows {
+        width: 100%;
+        max-width: 1566px;
+        height: 0;
+        position: absolute;
+        top: calc(50% - 24px);
+        left: 50%;
+        transform: translate(-50%, -24px);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slick-arrow{
+        width: 90px;
+        height: 90px;
+        font-size: 0;
+        border: none;
+        background: center no-repeat transparent;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='42' viewBox='0 0 24 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.40237 41.2538C3.1171 41.5391 2.76051 41.6817 2.36827 41.6817C1.97602 41.6817 1.61943 41.5391 1.33416 41.2538C0.763614 40.6833 0.763614 39.7561 1.33416 39.1856L19.5202 20.9996L1.33416 2.81351C0.763614 2.24296 0.763614 1.31583 1.33416 0.74529C1.9047 0.174747 2.83183 0.174747 3.40237 0.74529L22.6225 19.9654C23.1931 20.536 23.1931 21.4631 22.6225 22.0337L3.40237 41.2538Z' fill='white'/%3E%3C/svg%3E%0A");
+        &:hover{
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='42' viewBox='0 0 24 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.40237 41.2538C3.1171 41.5391 2.76051 41.6817 2.36827 41.6817C1.97602 41.6817 1.61943 41.5391 1.33416 41.2538C0.763614 40.6833 0.763614 39.7561 1.33416 39.1856L19.5202 20.9996L1.33416 2.81351C0.763614 2.24296 0.763614 1.31583 1.33416 0.74529C1.9047 0.174747 2.83183 0.174747 3.40237 0.74529L22.6225 19.9654C23.1931 20.536 23.1931 21.4631 22.6225 22.0337L3.40237 41.2538Z' fill='%2389C249'/%3E%3C/svg%3E%0A");
+        }
+        &:first-child{
+            transform: rotate(180deg);
+        }
+    }
+
+    .slick-dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+        margin: 0;
+        padding: 0;
+            li{
+                display: flex;
+                padding: 0 13px;
+                list-style: none;
+                &.slick-active{
+                    button{
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+
+            button {
+                font-size: 0;
+                border-radius: 50%;
+                padding: 0px;
+                opacity: 0.9;
+                border: 2px solid #FFFFFF;
+                background: transparent;
+                width: 8px;
+                height: 8px;
+            }
     }
 
     

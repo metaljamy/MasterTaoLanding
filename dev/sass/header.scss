@@ -1,31 +1,47 @@
-header{
-
-    .navbar{
-        padding: 26.5px 0px 0 18px;
-        //@extend container;
-        .navbar-nav{
-            max-width: 618px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-        }
-        .btn-primary{
-            margin-left: 16px;
-            padding: 13px 23.5px;
-            white-space: nowrap;
-        }
+header {
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 39px;
+        @extend .container;
     }
 
     .navbar-brand {
         padding: 0;
     }
 
-    .nav-link{
-        color: white;
-        &:hover, &focus{
+    .nav-link {
+        color: #fff;
+
+        &:hover,
+        &:focus {
             color: $primary-color;
         }
+    }
+
+    .navbar-nav {
+        max-width: 647px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 5px;
+ 
+        .nav-link {
+            &.active {
+                color: $primary-color;
+            }
+
+            &.disabled {
+                color: #ffebeb5e;
+            }
+        }
+    }
+
+    .btn {
+        padding: 13px 26px;
+        margin-left: 16px;
+        white-space: nowrap;
+        letter-spacing: 0px;
     }
 
     .navbar-toggler {
@@ -81,7 +97,4 @@ header{
             transform: rotate(-45deg);
        }
     }
-
-
 }
-

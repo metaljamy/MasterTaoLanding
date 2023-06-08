@@ -1,0 +1,59 @@
+<section class="container-fluid primary-bg-section">
+    <div class="container">
+        <div class="template-title text-left col-md-7">
+            <h2>Получить рассчет стоимости доставки вашего груза </h2>
+        </div>
+        <form class="calc-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="goods_category" class="form-label">Категория товара:</label>
+                    <input type="text" class="form-control" id="goods_category" placeholder="Категория товара">
+                </div>
+                <div class="col-md-6">
+                    <label for="cargo_price" class="form-label">Стоимость груза:</label>
+                    <input type="number" class="form-control" id="cargo_price" placeholder="Введите стоимость">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="cargo_weight" class="form-label">Вес груза (кг):</label>
+                    <input type="number" class="form-control" id="cargo_weight" placeholder="Введите вес">
+                </div>
+                <div class="col-md-6">
+                    <label for="goods_amount" class="form-label">Объем груза (м3):</label>
+                    <input type="number" class="form-control" id="goods_amount" placeholder="Введите объем">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 checkbox-container">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="insurance">
+                        <label class="form-check-label" for="insurance">
+                            Страховка
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="customs_clearence" checked>
+                        <label class="form-check-label" for="customs_clearence">
+                            Таможенное оформление
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="goods_amount" class="form-label">Код ТН ВЭД:</label>
+                    <input type="n" class="form-control" id="goods_amount" placeholder="Введите код">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 upload-box">
+                    <label for="file">фотография.jpeg</label>
+                    <input type="file" name="file" id="file">
+                    <label for="file">Загрузить фото товара</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img class="icon" src="assets/img/arrow.svg" alt=""></button>
+            </div>
+        </form>
+    </div>
+</section>

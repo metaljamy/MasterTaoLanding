@@ -1,0 +1,104 @@
+.calc-form{
+    margin: 0px 0 0 24px;
+    max-width: 626px;
+    height: 597px;
+    padding: 50px;
+    background: $secondary-bg;
+    box-shadow: 5px 15px 40px #1c1f2a;
+    border-radius: 20px;
+    position: relative;
+    .row{
+        display: flex;
+        .col-md-6{
+            padding-bottom: 22px;
+        }
+        label{
+            margin: 0;
+        }
+        .checkbox-container{
+            margin: 3px 15px 0 -15px;
+            padding-left: 3px;
+            [type=checkbox] + label {
+                margin-bottom: -7px;
+                margin-top: 16px;
+            }
+            label {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 126%;
+                margin-bottom: 6px;
+            }
+        }
+        .upload-box{
+            width: 100%;
+            display: flex;
+            margin-bottom: 22px;
+            flex-direction: column;
+
+            input[type="file"]{
+                display: none;
+            }
+
+            label:last-child{
+                border-radius: 10px;
+                border: dashed;
+                padding: 12px 0;
+                background-color: transparent;
+                justify-content: center;
+                margin-top: 3px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 126%;
+                display: flex;
+                cursor: pointer;
+            }
+        }
+        input{
+            max-width: 248px;
+            border-radius: 10px;
+            padding: 18px 20px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 126%;
+            color: #CBCBCB;
+            background-color: $text-color;
+            border: none;
+                &:hover {
+                    box-shadow: 0px 0px 5px 2px #767ea5;
+                }
+                &:active {
+                    box-shadow: 0px 0px 5px 2px $primary-color;
+                }
+                &:focus {
+                    box-shadow: 0px 0px 5px 2px $secondary-color;
+                }
+                &:focus-visible {
+                    outline: none;
+                }
+
+        }
+
+    }
+        &:after{
+            content:"";
+            position: absolute;
+            left: 597px;
+            bottom: -111px;
+            width: 560px;
+            height: 888px;
+            background: url(../assets/img/form-img.png) center/contain no-repeat;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance:textfield;
+    }
+
+}
