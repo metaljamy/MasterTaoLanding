@@ -1,0 +1,15 @@
+.about{
+    display: flex;
+    h5{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+    }
+    .about-img{
+        justify-content: center;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        display: flex;
+    }
+}

@@ -229,7 +229,7 @@ section {
       .template-title {
         position: relative;
         text-align: center;
-        padding-bottom: 18px;
+        padding-bottom: 16px;
         margin-bottom: 50px;
         h2 {
           font-weight: 700;
@@ -255,9 +255,6 @@ section {
         &.text-left {
           text-align: left;
           padding-bottom: 5px;
-          h2:first-child{
-            padding-left: 8px;
-          }
           &::before {
             position: absolute;
             content: "";
