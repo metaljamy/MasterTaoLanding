@@ -26,8 +26,9 @@
             label {
                 font-weight: 600;
                 font-size: 15px;
-                line-height: 126%;
                 margin-bottom: 6px;
+                align-items: center;
+                display: flex;
             }
         }
         .upload-box{
@@ -84,7 +85,7 @@
             content:"";
             position: absolute;
             left: 597px;
-            bottom: -111px;
+            bottom: -100px;
             width: 560px;
             height: 888px;
             background: url(assets/img/form-img.png) center/contain no-repeat;

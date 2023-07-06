@@ -169,6 +169,7 @@
 
     section.advantages.container-fluid.secondary-bg-section  {
         padding: 55px 0 60px;
+        margin-bottom: 54px;
             &:after{
                 position: absolute;
                 border-radius: 0;
@@ -251,6 +252,9 @@
 
     section.delivery.container-fluid.primary-bg-section {
         padding: 0;
+        .delivery-box {
+            margin: 0;
+        }
         .btn{
             padding: 14px 13px;
 
@@ -264,13 +268,18 @@
     }
 
     section.container-fluid.secondary-bg-section {
-        padding: 54px 0px 100px;
         &:after{
             position: absolute;
             border-radius: 0;
             left: 0;
             right: 0;
         }
+
+    }
+
+    section.services.container-fluid.secondary-bg-section {
+        padding: 54px 0px 60px;
+        margin-bottom: 54px;
         .slick-dots{
             margin-top: 32px;
         }
